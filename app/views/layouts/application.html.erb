@@ -1,19 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
-    <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag :defaults %>
-    <%= csrf_meta_tag %>
-    <%= yield(:head) %>
-  </head>
-  <body>
-    <div id="container">
-      <% flash.each do |name, msg| %>
-        <%= content_tag :div, msg, :id => "flash_#{name}" %>
-      <% end %>
-      <%= content_tag :h1, yield(:title) if show_title? %>
-      <%= yield %>
+
+<head>
+  <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+  <%= stylesheet_link_tag "application", "blue" %>
+
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+  <%= yield(:head) %>
+</head>
+
+<body>
+<div id="main">
+  <div id="links">
+    <a href="http://www.flickr.com/groups/twphch">Flickr-gruppe</a>
+  </div>
+  <div id="logo"><h1>Twitter Photo Challenge</h1>
+
+    <h2>&quot;Arkivet - 91 ukentlige runder&quot;</h2></div>
+  <div id="menu">
+    <ul>
+      <li><%= link_to "Ukentlige runder", rounds_path, :id => 'archive_link', :class => class_for_page_name(controller, 'archive') %></li>
+      <li><%= link_to "52-ukers avstemning", first_year_index_path, :id => '52_link', :class => class_for_page_name(controller, '52') %></li>
+      <li><%= link_to "Best Of TwPhCh", best_of_index_path, :id => '91_link', :class => class_for_page_name(controller, '91') %></li>
+      <li><%= link_to "Om arkivet", about_index_path, :id => 'about_link', :class => class_for_page_name(controller, 'about') %></li>
+    </ul>
+  </div>
+  <div id="content">
+    <div id="column1">
+      <!--
+      <div class="sidebaritem">
+          <h1>latest news</h1>
+
+          <h2>01.09.2006</h2>
+
+          <p>This is where you can put your latest news.</p>
+
+          <p><a href="#">read more ...</a></p>
+
+          <p></p>
+
+          <p></p>
+
+          <h2>01.09.2006</h2>
+
+          <p>This is where you can put your latest news.</p>
+
+          <p><a href="#">read more ...</a></p>
+      </div>
+      <div class="sidebaritem">
+          <h1>additional links</h1>
+
+          <div class="sbilinks">
+
+              <ul>
+                  <li><a href="http://www.openwebdesign.org">open web design</a></li>
+                  <li><a href="http://www.w3schools.com/xhtml/default.asp">learn XHTML</a></li>
+                  <li><a href="http://www.w3schools.com/css/default.asp">learn CSS</a></li>
+                  <li><a href="http://www.mozilla.com/firefox">get firefox</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="sidebaritem">
+          <h1>other information</h1>
+          <p>
+              This space can be used for additional information such as a contact phone number, address
+              or maybe even a graphic.
+          </p>
+      </div>
+      -->
     </div>
-  </body>
+    <div id="column2">
+      <% flash.each do |name, msg| %>
+          <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <% end %>
+      <%= content_tag :h1, yield(:title), :id => 'content_title' if show_title? %>
+      <div id="page_content">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+  <div id="footer"><a href="http://www.dcarter.co.uk">design by dcarter</a>
+  </div>
+</div>
+</body>
 </html>

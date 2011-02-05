@@ -1,0 +1,5 @@
+$('#content_title').html('Om arkivet');
+$('#page_content').html('<%= escape_javascript(render("about")) %>');
+$('#menu ul li a').removeClass('selected');
+$('#about_link').addClass('selected');
+document.title = 'Om arkivet';
