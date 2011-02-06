@@ -1,0 +1,19 @@
+nb:
+  main:
+    about:
+      title: "Om arkivet"
+      link: "Om arkivet"
+    best_of:
+      title: "Best of TwPhCh"
+      link: "Best of TwPhCh"
+    first_year:
+      title: "Det første året"
+      link: "Det første året"
+    rounds:
+      title: "Ukentlige runder"
+      link: "Ukentlige runder"
+  side:
+    photographers:
+      link: "Fotografferne"
+    group:
+      title: "Gruppen"

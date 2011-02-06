@@ -1,5 +1,5 @@
-$('#content_title').html('Om arkivet');
+$('#content_title').html("<%= I18n.t('main.about.title') %>");
 $('#page_content').html('<%= escape_javascript(render("about")) %>');
 $('#menu ul li a').removeClass('selected');
 $('#about_link').addClass('selected');
-document.title = 'Om arkivet';
+document.title = "<%= I18n.t('main.about.title') %>";

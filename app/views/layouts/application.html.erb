@@ -20,34 +20,20 @@
     <h2>&quot;Arkivet - 91 ukentlige runder&quot;</h2></div>
   <div id="menu">
     <ul>
-      <li><%= link_to "Ukentlige runder", rounds_path, :id => 'archive_link', :class => class_for_page_name(controller, 'archive') %></li>
-      <li><%= link_to "52-ukers avstemning", first_year_index_path, :id => '52_link', :class => class_for_page_name(controller, '52') %></li>
-      <li><%= link_to "Best Of TwPhCh", best_of_index_path, :id => '91_link', :class => class_for_page_name(controller, '91') %></li>
-      <li><%= link_to "Om arkivet", about_index_path, :id => 'about_link', :class => class_for_page_name(controller, 'about') %></li>
+      <li><%= link_to I18n.t('main.rounds.link'), rounds_path, :id => 'archive_link', :class => class_for_page_name(controller, 'archive') %></li>
+      <li><%= link_to I18n.t('main.first_year.link'), first_year_index_path, :id => '52_link', :class => class_for_page_name(controller, '52') %></li>
+      <li><%= link_to I18n.t('main.best_of.link'), best_of_index_path, :id => '91_link', :class => class_for_page_name(controller, '91') %></li>
+      <li><%= link_to I18n.t('main.about.link'), about_index_path, :id => 'about_link', :class => class_for_page_name(controller, 'about') %></li>
     </ul>
   </div>
   <div id="content">
     <div id="column1">
-      <!--
       <div class="sidebaritem">
-          <h1>latest news</h1>
+          <h1><%= I18n.t('side.group.title') %></h1>
 
-          <h2>01.09.2006</h2>
-
-          <p>This is where you can put your latest news.</p>
-
-          <p><a href="#">read more ...</a></p>
-
-          <p></p>
-
-          <p></p>
-
-          <h2>01.09.2006</h2>
-
-          <p>This is where you can put your latest news.</p>
-
-          <p><a href="#">read more ...</a></p>
+          <p><%= link_to I18n.t('side.photographers.link'), root_path, :id => 'photographers_link' %></p>
       </div>
+      <!--
       <div class="sidebaritem">
           <h1>additional links</h1>
 
