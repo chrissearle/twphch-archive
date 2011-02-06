@@ -27,4 +27,18 @@ module LayoutHelper
       ''
     end
   end
+
+  def css_colour
+    if session[:colour].nil?
+      session[:colour] = 'blue'
+    end
+
+    if !params[:colour].nil?
+      if (params[:colour] == 'blue' || params[:colour] == 'green' || params[:colour] == 'orange' || params[:colour] == 'purple')
+        session[:colour] = params[:colour]
+      end
+    end
+
+    session[:colour]
+  end
 end

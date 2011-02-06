@@ -41,7 +41,7 @@ h1, #column1 h1, #column2 h1 {
     border-color: #787878;
 }
 
-#menu li a:hover, #menu li a#selected, #menu li a#selected:hover {
+#menu li a:hover, #menu li a.selected, #menu li a.selected:hover {
     background: #FF9C27;
     color: #FFF;
 }

@@ -3,7 +3,8 @@
 
 <head>
   <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
-  <%= stylesheet_link_tag "application", "blue" %>
+  <%= stylesheet_link_tag "application" %>
+  <link href="<%= stylesheet_path css_colour %>" rel="stylesheet" id="colour_css_tag" type="text/css" />
 
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
@@ -66,7 +67,13 @@
       </div>
     </div>
   </div>
-  <div id="footer"><a href="http://www.dcarter.co.uk">design by dcarter</a>
+  <div id="footer">
+    <%= link_to image_tag('blue.png'), url_for(:colour => 'blue'), 'data-colour' => 'blue', :class => 'colour_changer' %>
+    <%= link_to image_tag('green.png'), url_for(:colour => 'green'), 'data-colour' => 'green', :class => 'colour_changer' %>
+    <%= link_to image_tag('orange.png'), url_for(:colour => 'orange'), 'data-colour' => 'orange', :class => 'colour_changer' %>
+    <%= link_to image_tag('purple.png'), url_for(:colour => 'purple'), 'data-colour' => 'purple', :class => 'colour_changer' %>
+    |
+    <a href="http://www.dcarter.co.uk">design by dcarter</a>
   </div>
 </div>
 </body>
