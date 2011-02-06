@@ -7,5 +7,5 @@
 <% (1..3).each do |rank| %>
     <h1><%= rank %>. plass med <%= @votes[rank] %> stemmer:</h1>
 
-    <%= render :partial => 'image', :collection => @images[rank] %>
+    <%= render :partial => '/image', :collection => @images[rank] %>
 <% end %>

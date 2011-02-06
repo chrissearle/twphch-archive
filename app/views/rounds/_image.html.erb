@@ -1,0 +1,3 @@
+<h1><%= image.rank %>. plass med <%= image.votes %> stemmer:</h1>
+
+<%= render :partial => '/image', :object => flickr_get_image(image) %>

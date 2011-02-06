@@ -75,4 +75,8 @@ module LayoutHelper
   def flickr_image_description(image)
     image.description.gsub(/\n/, "<br/>").html_safe
   end
+
+  def flickr_get_image(image)
+    flickr.photos.getInfo(:photo_id => image.fid)
+  end
 end
