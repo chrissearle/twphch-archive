@@ -1,3 +1,5 @@
+# coding: UTF-8
+
 class Photo
   def self.get_photo(id)
     photo = Rails.cache.read(id)

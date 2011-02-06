@@ -1,3 +1,5 @@
+# coding: UTF-8
+
 class ImagesController < ApplicationController
   def show
     @image = Photo.get_photo(params[:id])

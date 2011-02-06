@@ -1,3 +1,5 @@
+# coding: UTF-8
+
 #!/usr/bin/ruby
 # Chooses a photo from the current interesting
 # photo and set it as the background image on

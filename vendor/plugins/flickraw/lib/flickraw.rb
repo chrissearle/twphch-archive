@@ -1,3 +1,5 @@
+# coding: UTF-8
+
 # encoding: ascii-8bit
 # Copyright (c) 2006 Mael Clerambault <maelclerambault@yahoo.fr>
 #

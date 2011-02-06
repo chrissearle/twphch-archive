@@ -1,3 +1,5 @@
+# coding: UTF-8
+
 require 'flickraw'
 
 # Get the list of the 20 most recent 'interesting photos'

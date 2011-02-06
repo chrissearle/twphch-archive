@@ -1,3 +1,5 @@
+# coding: UTF-8
+
 require "rdoc"
 require "rdoc/parser/ruby"
 require "cgi"

@@ -1,3 +1,5 @@
+# coding: UTF-8
+
 require 'flickraw'
 
 # This is how to authenticate on flickr website.

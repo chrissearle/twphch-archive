@@ -1,3 +1,5 @@
+# coding: UTF-8
+
 class Add52And91ToImage < ActiveRecord::Migration
   def self.up
     add_column :images, :first_rank, :integer, :default => 0
