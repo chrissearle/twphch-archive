@@ -66,4 +66,10 @@ h1, #column1 h1, #column2 h1 {
 .sbilinks li a:hover, .sidebaritem a:hover {
     background: #545454 url(../images/green_cog.png) no-repeat left center;
     color: #8AAF55;
-} 
+}
+
+/* Local */
+
+table.challenge_list {
+    border-color: #787878;
+}

@@ -302,3 +302,21 @@ ol li {
     color: #FF9C21;
     padding: 0 40px 0 20px;
 }
+
+
+/* Local */
+
+table.challenge_list {
+    width: 500px;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+table.challenge_list th {
+    border-bottom: 1px solid;
+    padding: 3px;
+}
+
+table.challenge_list td {
+    padding: 3px;
+}

@@ -1,3 +1,5 @@
+# coding: UTF-8
+
 TwphchArchive::Application.routes.draw do
   resources :about
   resources :best_of

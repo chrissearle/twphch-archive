@@ -15,6 +15,11 @@ $(function () {
         e.preventDefault();
     });
 
+    $('a.round_tag_link').live('click', function(e) {
+        $.getScript(this.href);
+        e.preventDefault();
+    });
+
 //    $(window).bind("popstate", function () {
 //        $.getScript(location.href);
 //    });

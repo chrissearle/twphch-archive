@@ -67,3 +67,9 @@ h1, #column1 h1, #column2 h1 {
     background: #545454 url(../images/orange_cog.png) no-repeat left center;
     color: #FF9C27;
 } 
+
+/* Local */
+
+table.challenge_list {
+    border-color: #787878;
+}
