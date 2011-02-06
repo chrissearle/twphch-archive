@@ -2,13 +2,8 @@
 // This file is automatically included by javascript_include_tag :defaults
 
 $(function () {
-    $('#menu ul a').live('click', function (e) {
-        $.getScript(this.href);
-//        history.pushState(null, "", this.href);
-        e.preventDefault();
-    });
-
     $('.ajaxable').live('click', function (e) {
+        $('#statistics_div').html('');
         $.getScript(this.href);
         e.preventDefault();
     });
@@ -20,16 +15,7 @@ $(function () {
         e.preventDefault();
     });
 
-    $('a.round_tag_link').live('click', function(e) {
-        $.getScript(this.href);
-        e.preventDefault();
-    });
 
-    $('a.open_image_link').live('click', function(e) {
-        // Can read data-id if wanted
-        $.getScript(this.href);
-        e.preventDefault();
-    });
 
 //    $(window).bind("popstate", function () {
 //        $.getScript(location.href);

@@ -5,5 +5,5 @@
 
     <img src="<%= flickr_image_url(image, 'm') %>" alt="#{image.title}"/>
 
-    <p><%= link_to "Les mer ...", image_path(image['id']), :class => 'open_image_link', 'data-id' => image['id'] %></p>
+    <p><%= link_to "Les mer ...", image_path(image['id']), :class => 'open_image_link ajaxable', 'data-id' => image['id'] %></p>
 <% end %>

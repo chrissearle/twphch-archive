@@ -221,7 +221,8 @@ ol li {
 }
 
 .sbilinks {
-    padding: 0
+    padding: 0;
+    margin-bottom: 10px;
 }
 
 .sbilinks ul {

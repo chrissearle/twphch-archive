@@ -5,6 +5,6 @@ class BestOfController < ApplicationController
   end
 
   def page_name
-    '91'
+    '92'
   end
 end

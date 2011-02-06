@@ -1,3 +1,4 @@
 $('#content_title').html("<%= @image['title ']%>");
 $('#page_content').html('<%= escape_javascript(render("image")) %>');
+$('#statistics_div').html('<%= escape_javascript(render("/stats")) %>');
 document.title = "<%= @image['title'] %>";

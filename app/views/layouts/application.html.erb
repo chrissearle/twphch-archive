@@ -4,7 +4,7 @@
 <head>
   <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
   <%= stylesheet_link_tag "application" %>
-  <link href="<%= stylesheet_path css_colour %>" rel="stylesheet" id="colour_css_tag" type="text/css" />
+  <link href="<%= stylesheet_path css_colour %>" rel="stylesheet" id="colour_css_tag" type="text/css"/>
 
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
@@ -18,36 +18,28 @@
   </div>
   <div id="logo"><h1>Twitter Photo Challenge</h1>
 
-    <h2>&quot;Arkivet - 91 ukentlige runder&quot;</h2></div>
+    <h2>&quot;Arkivet - 92 ukentlige runder&quot;</h2></div>
   <div id="menu">
     <ul>
-      <li><%= link_to I18n.t('main.rounds.link'), rounds_path, :id => 'archive_link', :class => class_for_page_name(controller, 'archive') %></li>
-      <li><%= link_to I18n.t('main.first_year.link'), first_year_index_path, :id => '52_link', :class => class_for_page_name(controller, '52') %></li>
-      <li><%= link_to I18n.t('main.best_of.link'), best_of_index_path, :id => '91_link', :class => class_for_page_name(controller, '91') %></li>
-      <li><%= link_to I18n.t('main.about.link'), about_index_path, :id => 'about_link', :class => class_for_page_name(controller, 'about') %></li>
+      <li><%= link_to I18n.t('main.rounds.link'), rounds_path, :id => 'archive_link', :class => "ajaxable #{class_for_page_name(controller, 'archive')}" %></li>
+      <li><%= link_to I18n.t('main.first_year.link'), first_year_index_path, :id => '52_link', :class => "ajaxable #{class_for_page_name(controller, '52')}" %></li>
+      <li><%= link_to I18n.t('main.best_of.link'), best_of_index_path, :id => '92_link', :class => "ajaxable #{class_for_page_name(controller, '92')}" %></li>
+      <li><%= link_to I18n.t('main.about.link'), about_index_path, :id => 'about_link', :class => "ajaxable #{class_for_page_name(controller, 'about')}" %></li>
     </ul>
   </div>
   <div id="content">
     <div id="column1">
       <div class="sidebaritem">
-          <h1><%= I18n.t('side.group.title') %></h1>
+        <h1><%= I18n.t('side.group.title') %></h1>
 
-          <p><%= link_to I18n.t('side.photographers.link'), root_path, :id => 'photographers_link' %></p>
+        <p><%= link_to I18n.t('side.photographers.link'), root_path, :id => 'photographers_link' %></p>
+      </div>
+      <div id="statistics_div">
+        <% if (@data) %>
+            <%= render :partial => '/stats' %>
+        <% end %>
       </div>
       <!--
-      <div class="sidebaritem">
-          <h1>additional links</h1>
-
-          <div class="sbilinks">
-
-              <ul>
-                  <li><a href="http://www.openwebdesign.org">open web design</a></li>
-                  <li><a href="http://www.w3schools.com/xhtml/default.asp">learn XHTML</a></li>
-                  <li><a href="http://www.w3schools.com/css/default.asp">learn CSS</a></li>
-                  <li><a href="http://www.mozilla.com/firefox">get firefox</a></li>
-              </ul>
-          </div>
-      </div>
       <div class="sidebaritem">
           <h1>other information</h1>
           <p>

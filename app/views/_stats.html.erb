@@ -1,0 +1,34 @@
+<div class="sidebaritem">
+  <h1>Om bildet</h1>
+
+
+  <div class="sbilinks">
+    <ul>
+      <li><%= @data.rank %>. plass med <%= @data.votes %> stemmer.</li>
+      <li>
+        <%= link_to "##{@data.challenge.tag} - #{@data.challenge.title}", round_path(@data.challenge), :class => 'ajaxable' %>
+      </li>
+    </ul>
+  </div>
+  <p>&nbsp;</p>
+  <% if (@data.first_rank > 0) %>
+      <div class="sbilinks">
+        <ul>
+          <li><%= @data.first_rank %>. plass med <%= @data.first_votes %> stemmer.</li>
+          <li>
+            <%= link_to "Det første året", first_year_index_path, :class => 'ajaxable' %>
+          </li>
+        </ul>
+      </div>
+      <p>&nbsp;</p>
+  <% end %>
+  <% if (@data.best_rank > 0) %>
+      <div class="sbilinks">
+        <ul>
+          <li><%= @data.best_rank %>. plass i Best of TwPhCh avstemningen med <%= @data.best_votes %> stemmer.</li>
+        </ul>
+      </div>
+      <p>&nbsp;</p>
+  <% end %>
+
+</div>

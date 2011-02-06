@@ -1,5 +1,5 @@
 <tr>
-  <td><%= link_to "##{challenge.tag}", round_path(challenge), :id => "round_link_#{challenge.tag}", 'data-tag' => challenge.tag, :class => 'round_tag_link' %></td>
+  <td><%= link_to "##{challenge.tag}", round_path(challenge), :id => "round_link_#{challenge.tag}", 'data-tag' => challenge.tag, :class => 'round_tag_link ajaxable' %></td>
   <td><%= challenge.title %></td>
   <td><%= challenge.date %></td>
 </tr>
