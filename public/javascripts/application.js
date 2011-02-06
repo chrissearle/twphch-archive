@@ -20,6 +20,12 @@ $(function () {
         e.preventDefault();
     });
 
+    $('a.open_image_link').live('click', function(e) {
+        // Can read data-id if wanted
+        $.getScript(this.href);
+        e.preventDefault();
+    });
+
 //    $(window).bind("popstate", function () {
 //        $.getScript(location.href);
 //    });

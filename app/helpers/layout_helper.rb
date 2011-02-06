@@ -43,4 +43,36 @@ module LayoutHelper
 
     session[:colour]
   end
+
+  def flickr_image_url(image, suffix = '')
+    if (!suffix.blank?)
+      suffix = "_#{suffix}"
+    end
+
+    "http://farm#{image.farm}.static.flickr.com/#{image.server}/#{image.id}_#{image.secret}#{suffix}.jpg"
+  end
+
+  def flickr_photographer_name(photographer)
+    (photographer.realname && !photographer.realname.blank?) ? photographer.realname : photographer.username;
+  end
+
+  def flickr_photographer_profile(photographer)
+    "http://www.flickr.com/people/#{photographer.nsid}/"
+  end
+
+  def flickr_photographer_stream(photographer)
+    "http://www.flickr.com/photos/#{photographer.nsid}/"
+  end
+
+  def flickr_photographer_buddy_icon(photographer)
+    if (photographer.iconserver.to_i > 0)
+      "http://farm#{photographer.iconfarm}.static.flickr.com/#{photographer.iconserver}/buddyicons/#{photographer.nsid}.jpg"
+    else
+      "http://www.flickr.com/images/buddyicon.jpg"
+    end
+  end
+
+  def flickr_image_description(image)
+    image.description.gsub(/\n/, "<br/>").html_safe
+  end
 end
