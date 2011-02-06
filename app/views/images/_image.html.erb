@@ -1,13 +1,23 @@
 <img src="<%= flickr_image_url(@image) %>" alt="<%= @image.title %>"/>
 <p><%= flickr_image_description(@image) %></p>
 
-<strong>Tags</strong>
+<h2>Tags</h2>
 
 <ul>
   <% @image.tags.each do |tag| %>
       <li><%= tag.raw %></li>
   <% end %>
 </ul>
+
+<h2>Statistikk</h2>
+
+<p><%= @data.rank %>. plass i <%= link_to "##{@data.challenge.tag}", round_path(@data.challenge), :class => 'ajaxable' %> - <%= @data.challenge.title %> med <%= @data.votes %> stemmer.</p>
+<% if (@data.first_rank > 0) %>
+<p><%= @data.first_rank %>. plass i <%= link_to 'avstemning over alle vinnere i det første året', first_year_index_path, :class => 'ajaxable'%> med <%= @data.first_votes %> stemmer.</p>
+<% end %>
+<% if (@data.best_rank > 0) %>
+<p><%= @data.best_rank %>. plass i Best of TwPhCh avstemningen med <%= @data.best_votes %> stemmer.</p>
+<% end %>
 
 <h1><%= flickr_photographer_name(@image.owner) %></h1>
 

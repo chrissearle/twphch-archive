@@ -8,6 +8,11 @@ $(function () {
         e.preventDefault();
     });
 
+    $('.ajaxable').live('click', function (e) {
+        $.getScript(this.href);
+        e.preventDefault();
+    });
+
     $('a.colour_changer').click(function(e) {
         var href = $('#colour_css_tag').attr('href');
         href = href.replace(/[^\/]*css/, $(this).data('colour') + ".css");

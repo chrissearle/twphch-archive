@@ -1,3 +1,3 @@
-$('#content_title').html("<%= "##{@challenge.tag}" %>");
+$('#content_title').html("<%= "##{@challenge.tag} - #{@challenge.title}" %>");
 $('#page_content').html('');
-document.title = "<%= "##{@challenge.tag}" %>";
+document.title = "<%= "##{@challenge.tag} - #{@challenge.title}" %>";
