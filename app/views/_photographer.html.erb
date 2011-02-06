@@ -1,0 +1,13 @@
+<div class="sidebaritem">
+  <h1><%= flickr_photographer_name(@image['owner']) %></h1>
+
+  <img src="<%= flickr_photographer_buddy_icon(@image['owner']) %>" alt="<%= flickr_photographer_name(@image['owner']) %>"/>
+
+
+  <div class="sbilinks">
+    <ul>
+      <li><a target="_blank" href="<%= flickr_photographer_stream(@image['owner']) %>">Bilder</a></li>
+      <li><a target="_blank" href="<%= flickr_photographer_profile(@image['owner']) %>">Profil</a></li>
+    </ul>
+  </div>
+</div>

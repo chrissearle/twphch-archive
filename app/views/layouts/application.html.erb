@@ -29,25 +29,21 @@
   </div>
   <div id="content">
     <div id="column1">
-      <div class="sidebaritem">
-        <h1><%= I18n.t('side.group.title') %></h1>
-
-        <p><%= link_to I18n.t('side.photographers.link'), root_path, :id => 'photographers_link' %></p>
+      <div id="tags_div">
+        <% if (@tags) %>
+            <%= render :partial => '/tags' %>
+        <% end %>
+      </div>
+      <div id="photographer_div">
+        <% if (@photographer) %>
+            <%= render :partial => '/photographer' %>
+        <% end %>
       </div>
       <div id="statistics_div">
         <% if (@data) %>
             <%= render :partial => '/stats' %>
         <% end %>
       </div>
-      <!--
-      <div class="sidebaritem">
-          <h1>other information</h1>
-          <p>
-              This space can be used for additional information such as a contact phone number, address
-              or maybe even a graphic.
-          </p>
-      </div>
-      -->
     </div>
     <div id="column2">
       <% flash.each do |name, msg| %>

@@ -1,0 +1,9 @@
+<div class="sidebaritem">
+  <h1>Tags</h1>
+
+  <div class="sbilinks">
+    <% @tags.each do |tag| %>
+        <p class="cog"><%= tag.raw %></p>
+    <% end %>
+  </div>
+</div>

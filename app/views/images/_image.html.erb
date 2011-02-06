@@ -1,19 +1,2 @@
 <img src="<%= flickr_image_url(@image) %>" alt="<%= @image['title'] %>"/>
 <p><%= flickr_image_description(@image) %></p>
-
-<h2>Tags</h2>
-
-<ul>
-  <% @image['tags'].each do |tag| %>
-      <li><%= tag.raw %></li>
-  <% end %>
-</ul>
-
-<h1><%= flickr_photographer_name(@image['owner']) %></h1>
-
-<img src="<%= flickr_photographer_buddy_icon(@image['owner']) %>" alt="<%= flickr_photographer_name(@image['owner']) %>"/>
-
-<ul>
-  <li><a target="_blank" href="<%= flickr_photographer_stream(@image['owner']) %>">Bilder</a></li>
-  <li><a target="_blank" href="<%= flickr_photographer_profile(@image['owner']) %>">Profil</a></li>
-</ul>

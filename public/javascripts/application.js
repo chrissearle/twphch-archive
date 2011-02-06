@@ -4,6 +4,8 @@
 $(function () {
     $('.ajaxable').live('click', function (e) {
         $('#statistics_div').html('');
+        $('#tags_div').html('');
+        $('#photographer_div').html('');
         $.getScript(this.href);
         e.preventDefault();
     });

@@ -321,3 +321,8 @@ table.challenge_list th {
 table.challenge_list td {
     padding: 3px;
 }
+
+p.cog {
+    background: #545454 url(../images/cog.png) no-repeat left center;
+    padding: 0 0 2px 19px;
+}
