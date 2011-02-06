@@ -14,9 +14,9 @@ class FirstYearController < ApplicationController
     }
 
     @votes        = {
-        1 => first_images[0].votes,
-        2 => second_images[0].votes,
-        3 => third_images[0].votes
+        1 => first_images[0].first_votes,
+        2 => second_images[0].first_votes,
+        3 => third_images[0].first_votes
     }
   end
 
