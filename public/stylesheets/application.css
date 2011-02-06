@@ -304,7 +304,6 @@ ol li {
     padding: 0 40px 0 20px;
 }
 
-
 /* Local */
 
 table.challenge_list {
@@ -325,4 +324,11 @@ table.challenge_list td {
 p.cog {
     background: #545454 url(../images/cog.png) no-repeat left center;
     padding: 0 0 2px 19px;
+}
+
+#loading {
+    position: absolute;
+    background: white url(../images/loading.gif) no-repeat center;
+    opacity: 0.4;
+    filter: alpha(opacity=40)
 }

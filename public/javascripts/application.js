@@ -17,7 +17,16 @@ $(function () {
         e.preventDefault();
     });
 
+    $('#loading').hide().ajaxStart(function() {
+        offset = $('#main').offset();
 
+        $(this).offset(offset);
+        $(this).width($('#main').width());
+        $(this).height($(window).height());
+        $(this).show();
+    }).ajaxStop(function() {
+        $(this).hide();
+    });
 
 //    $(window).bind("popstate", function () {
 //        $.getScript(location.href);
