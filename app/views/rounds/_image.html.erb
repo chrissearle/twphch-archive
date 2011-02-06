@@ -2,8 +2,4 @@
 
 <% photo = flickr_get_image(image) %>
 
-<% if (photo.nil?) %>
-    <p>Et bilde fra denne runden fant vi ikke hos flickr. Alt vi vet er at bildet hadde flickr ID <%= image.fid %></p>
-<% else %>
-    <%= render :partial => '/image', :object => photo %>
-<% end %>
+<%= render :partial => '/image', :object => photo %>

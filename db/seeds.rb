@@ -91,7 +91,10 @@ Challenge.create([{:tag => "TwPhCh001", :title => "Rødt", :date => "2009-05-08"
                   {:tag => "TwPhCh086", :title => "Fristelser", :date => "2010-12-24"},
                   {:tag => "TwPhCh087", :title => "Nyttårsforsett", :date => "2010-12-31"},
                   {:tag => "TwPhCh088", :title => "Kong Vinter", :date => "2011-01-07"},
-                  {:tag => "TwPhCh089", :title => "Spill", :date => "2011-01-14"}])
+                  {:tag => "TwPhCh089", :title => "Spill", :date => "2011-01-14"},
+                  {:tag => "TwPhCh090", :title => "Frykt", :date => "2011-01-21"},
+                  {:tag => "TwPhCh091", :title => "Bandnavn", :date => "2011-01-28"},
+                  {:tag => "TwPhCh092", :title => "Farvel", :date => "2011-02-04"}])
 
 # select concat('{ :fid => "',  flickr_id,  '", :owner_fid => "', photographer_flickr_id, '", :votes => "', final_vote_count, '", :rank => "', final_rank, '", :challenge => Challenge.find_by_tag("', challenge_tag, '")},') from image
 
@@ -1770,7 +1773,39 @@ Image.create([{:fid => "3494281144", :owner_fid => "65685797@N00", :votes => "5"
               {:fid => "5353377186", :owner_fid => "38558130@N03", :votes => "4", :rank => "5", :challenge => Challenge.find_by_tag("TwPhCh088")},
               {:fid => "5353985967", :owner_fid => "28002906@N02", :votes => "2", :rank => "6", :challenge => Challenge.find_by_tag("TwPhCh088")},
               {:fid => "5354328083", :owner_fid => "32558102@N06", :votes => "8", :rank => "4", :challenge => Challenge.find_by_tag("TwPhCh088")},
-              {:fid => "5354924736", :owner_fid => "42031006@N07", :votes => "2", :rank => "6", :challenge => Challenge.find_by_tag("TwPhCh088")}])
+              {:fid => "5354924736", :owner_fid => "42031006@N07", :votes => "2", :rank => "6", :challenge => Challenge.find_by_tag("TwPhCh088")},
+              {:fid => "5359283615", :owner_fid => "65685448@N00", :votes => "9", :rank => "1", :challenge => Challenge.find_by_tag("TwPhCh089")},
+              {:fid => "5361490752", :owner_fid => "64369541@N00", :votes => "9", :rank => "1", :challenge => Challenge.find_by_tag("TwPhCh089")},
+              {:fid => "5365165998", :owner_fid => "89242035@N00", :votes => "5", :rank => "4", :challenge => Challenge.find_by_tag("TwPhCh089")},
+              {:fid => "5373119145", :owner_fid => "30237758@N04", :votes => "7", :rank => "2", :challenge => Challenge.find_by_tag("TwPhCh089")},
+              {:fid => "5373192931", :owner_fid => "41277157@N04", :votes => "6", :rank => "3", :challenge => Challenge.find_by_tag("TwPhCh089")},
+              {:fid => "5373791552", :owner_fid => "50476629@N02", :votes => "5", :rank => "4", :challenge => Challenge.find_by_tag("TwPhCh089")},
+              {:fid => "5373816580", :owner_fid => "40452278@N08", :votes => "1", :rank => "7", :challenge => Challenge.find_by_tag("TwPhCh089")},
+              {:fid => "5373883956", :owner_fid => "51785946@N06", :votes => "3", :rank => "5", :challenge => Challenge.find_by_tag("TwPhCh089")},
+              {:fid => "5374082898", :owner_fid => "41046781@N08", :votes => "2", :rank => "6", :challenge => Challenge.find_by_tag("TwPhCh089")},
+              {:fid => "5375785016", :owner_fid => "35559038@N02", :votes => "5", :rank => "4", :challenge => Challenge.find_by_tag("TwPhCh089")},
+              {:fid => "5376289732", :owner_fid => "45245527@N07", :votes => "11", :rank => "3", :challenge => Challenge.find_by_tag("TwPhCh090")},
+              {:fid => "5377830883", :owner_fid => "34918426@N02", :votes => "5", :rank => "7", :challenge => Challenge.find_by_tag("TwPhCh090")},
+              {:fid => "5378312177", :owner_fid => "41277157@N04", :votes => "0", :rank => "9", :challenge => Challenge.find_by_tag("TwPhCh090")},
+              {:fid => "5381575416", :owner_fid => "28745942@N05", :votes => "6", :rank => "6", :challenge => Challenge.find_by_tag("TwPhCh090")},
+              {:fid => "5381900722", :owner_fid => "50476629@N02", :votes => "10", :rank => "4", :challenge => Challenge.find_by_tag("TwPhCh090")},
+              {:fid => "5382256706", :owner_fid => "24480349@N07", :votes => "6", :rank => "6", :challenge => Challenge.find_by_tag("TwPhCh090")},
+              {:fid => "5384956353", :owner_fid => "89242035@N00", :votes => "12", :rank => "2", :challenge => Challenge.find_by_tag("TwPhCh090")},
+              {:fid => "5390606961", :owner_fid => "40452278@N08", :votes => "1", :rank => "8", :challenge => Challenge.find_by_tag("TwPhCh090")},
+              {:fid => "5392681673", :owner_fid => "26238811@N00", :votes => "1", :rank => "8", :challenge => Challenge.find_by_tag("TwPhCh090")},
+              {:fid => "5393593064", :owner_fid => "41046781@N08", :votes => "13", :rank => "1", :challenge => Challenge.find_by_tag("TwPhCh090")},
+              {:fid => "5393686271", :owner_fid => "51785946@N06", :votes => "8", :rank => "5", :challenge => Challenge.find_by_tag("TwPhCh090")},
+              {:fid => "5394085370", :owner_fid => "21518897@N08", :votes => "13", :rank => "1", :challenge => Challenge.find_by_tag("TwPhCh090")},
+              {:fid => "5401909366", :owner_fid => "65685448@N00", :votes => "12", :rank => "2", :challenge => Challenge.find_by_tag("TwPhCh091")},
+              {:fid => "5402067224", :owner_fid => "41277157@N04", :votes => "6", :rank => "4", :challenge => Challenge.find_by_tag("TwPhCh091")},
+              {:fid => "5404863501", :owner_fid => "27836459@N06", :votes => "2", :rank => "7", :challenge => Challenge.find_by_tag("TwPhCh091")},
+              {:fid => "5404912877", :owner_fid => "21518897@N08", :votes => "14", :rank => "1", :challenge => Challenge.find_by_tag("TwPhCh091")},
+              {:fid => "5408574114", :owner_fid => "32282894@N05", :votes => "2", :rank => "7", :challenge => Challenge.find_by_tag("TwPhCh091")},
+              {:fid => "5413662776", :owner_fid => "37643654@N04", :votes => "10", :rank => "3", :challenge => Challenge.find_by_tag("TwPhCh091")},
+              {:fid => "5413814698", :owner_fid => "50476629@N02", :votes => "6", :rank => "4", :challenge => Challenge.find_by_tag("TwPhCh091")},
+              {:fid => "5414071073", :owner_fid => "39255519@N05", :votes => "0", :rank => "8", :challenge => Challenge.find_by_tag("TwPhCh091")},
+              {:fid => "5414346532", :owner_fid => "28745942@N05", :votes => "4", :rank => "6", :challenge => Challenge.find_by_tag("TwPhCh091")},
+              {:fid => "5415289515", :owner_fid => "41046781@N08", :votes => "5", :rank => "5", :challenge => Challenge.find_by_tag("TwPhCh091")}])
 
 img             = Image.find_by_fid('4069606518')
 img.first_rank  = 1
