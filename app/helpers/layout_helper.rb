@@ -49,7 +49,7 @@ module LayoutHelper
       suffix = "_#{suffix}"
     end
 
-    "http://farm#{image.farm}.static.flickr.com/#{image.server}/#{image.id}_#{image.secret}#{suffix}.jpg"
+    "http://farm#{image['farm']}.static.flickr.com/#{image['server']}/#{image['id']}_#{image['secret']}#{suffix}.jpg"
   end
 
   def flickr_photographer_name(photographer)
@@ -73,7 +73,7 @@ module LayoutHelper
   end
 
   def flickr_image_description(image)
-    image.description.gsub(/\n/, "<br/>").html_safe
+    image['description'].gsub(/\n/, "<br/>").html_safe
   end
 
   def flickr_get_image(image)

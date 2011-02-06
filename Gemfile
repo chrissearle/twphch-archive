@@ -5,6 +5,7 @@ gem 'jquery-rails', '0.2.6'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
-gem 'flickraw', '0.8.3'
+#gem 'flickraw', '0.8.3'
 gem 'nifty-generators', '0.4.4'
 
+gem 'dalli'

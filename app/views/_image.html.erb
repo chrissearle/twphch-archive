@@ -1,5 +1,5 @@
-<h2>&laquo;<%= image.title %>&raquo; av <%= flickr_photographer_name(image.owner) %></h2>
+<h2>&laquo;<%= image["title"] %>&raquo; av <%= flickr_photographer_name(image["owner"]) %></h2>
 
 <img src="<%= flickr_image_url(image, 'm') %>" alt="#{image.title}" />
 
-<p><%= link_to "Les mer ...", image_path(image.id), :class => 'open_image_link', 'data-id' => image.id %></p>
+<p><%= link_to "Les mer ...", image_path(image['id']), :class => 'open_image_link', 'data-id' => image['id'] %></p>

@@ -1,3 +1,9 @@
 <h1><%= image.rank %>. plass med <%= image.votes %> stemmer:</h1>
 
-<%= render :partial => '/image', :object => flickr_get_image(image) %>
+<% photo = flickr_get_image(image) %>
+
+<% if (photo.nil?) %>
+    <p>Et bilde fra denne runden fant vi ikke hos flickr. Alt vi vet er at bildet hadde flickr ID <%= image.fid %></p>
+<% else %>
+    <%= render :partial => '/image', :object => photo %>
+<% end %>
