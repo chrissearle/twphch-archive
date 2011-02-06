@@ -77,6 +77,6 @@ module LayoutHelper
   end
 
   def flickr_get_image(image)
-    flickr.photos.getInfo(:photo_id => image.fid)
+    Photo.get_photo(image.fid)
   end
 end

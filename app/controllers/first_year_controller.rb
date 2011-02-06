@@ -8,9 +8,9 @@ class FirstYearController < ApplicationController
     third_images  = Image.get_first_for_rank(3)
 
     @images       = {
-        1 => first_images.map(&:fid).map { |id| flickr.photos.getInfo(:photo_id => id) },
-        2 => second_images.map(&:fid).map { |id| flickr.photos.getInfo(:photo_id => id) },
-        3 => third_images.map(&:fid).map { |id| flickr.photos.getInfo(:photo_id => id) }
+        1 => first_images.map(&:fid).map { |id| Photo.get_photo(id) },
+        2 => second_images.map(&:fid).map { |id| Photo.get_photo(id) },
+        3 => third_images.map(&:fid).map { |id| Photo.get_photo(id) }
     }
 
     @votes        = {
