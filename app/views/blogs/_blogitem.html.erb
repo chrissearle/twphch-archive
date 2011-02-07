@@ -1,0 +1,8 @@
+<h2><%= blogitem.date %> - <%= blogitem.category.title %></h2>
+
+<% if (!blogitem.fid.nil?) %>
+    <% photo = Photo.get_photo(blogitem.fid) %>
+    <img src="<%= flickr_image_url(photo) %>" />
+<% end %>
+
+<%= blogitem.body.html_safe %>

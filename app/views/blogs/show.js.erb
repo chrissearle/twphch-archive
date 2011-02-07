@@ -1,4 +1,4 @@
-$('#content_title').html("");
-$('#page_content').html('');
+$('#content_title').html('<%= @blog.title %>');
+$('#page_content').html('<%= escape_javascript(render(:partial => "blogitem", :object => @blog)) %>');
 $('#categories_div').html('<%= escape_javascript(render("/categories")) %>');
 document.title = "";

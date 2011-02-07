@@ -70,6 +70,6 @@ h1, #column1 h1, #column2 h1 {
 
 /* Local */
 
-table.challenge_list, table.challenge_list th {
+table.object_list, table.object_list th {
     border-color: #787878;
 }

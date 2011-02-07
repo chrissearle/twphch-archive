@@ -1831,3 +1831,229 @@ Category.create([{:title => 'Vinnere'},
                  {:title => 'Artikler'},
                  {:title => 'Info'},
                  {:title => 'Annet'}])
+
+body = <<BODY
+<p><img style="float: left; padding-right: 10px; padding-bottom: 10px;" src="/images/blog/1.jpg" width="300" height="200" />Vi har &quot;ansatt&quot; ny bloggsjef i TwPhCh.</p>
+<p>Han heter Öyvind Sviland, og er født på Jæren, og bosatt i Sverige.</p>
+<p>Du treffer han på twitter på brukernavn @sviland</p>
+<p>Flickrsidene hans finner du her: <a href='http://www.flickr.com/photos/sviland/'>www.flickr.com/photos/sviland/</a></p>
+<p>Han er oppvokst med foto, og er - som vi ser av porteføljens hans her på flickr - selv en dyktig fotograf.</p>
+<p>Vi i Twitter Phohtchallenge er stolte over å ha fått Öyvind med på laget, og gleder oss til å se hva han klarer å utvikle en TwPhCh-blogg til !</p>
+<p>Lykke til med jobben Öyvind !</p>
+BODY
+
+Blog.create({:title    => 'Ny Blogg-sjef', :body => body,
+             :category => Category.find_by_title('Info'), :date => '2010-04-10'})
+
+body = <<BODY
+<p><img style="float: left; padding-right: 10px; padding-bottom: 10px;" src="/images/blog/2.jpg" width="200" height="300" />For ganske nøyaktig ett år siden besøkte jeg fotoskolen <a href='http://www.fata.dk/' target='_blank'>&quot;Fatamorgana&quot; i København.</a> Møtet med skolens kunstneriske leder og primus motor ble ikke helt som jeg hadde tenkt meg.</p>
+<p>En sak var att vi ikke snakket samme språk, logisk nok i og med att han var dansk og jeg en blanding av svensk og norsk, - men vi kunne ikke forstå hverandre når vi snakket om bilder. Jeg dro frem det ene blinkskuddet etter det andre, men Morten Bo ble ikke spesiellt imponert over  hverken gyllne snitt eller spennende vinkler. Det berørte ham ikke - det manglet noe &quot;kød.&quot; &quot;- Du har teknikken, du er dyktig - men…..&quot;</p>
+<p>Jeg ble barnslig nok litt såret og veldig provosert.</p>
+<p>Nå ett år senere, er jeg takknemlig. Morten Bo ga meg en utfordring, og under det seneste året har dette møtet vært en drivende kraft i mitt bildeskapende.</p>
+<p>Møtet med de andre elevene på skolen, ble sjokk nummer to. Den ene etter den andre ville vise meg bildene sine og ville gjerne se på mine! Jeg må ha sett ut som ett spørsmålstegn. De hadde en åpenhet omkring det å se og snakke om bilder, som satte meg fullstendig på bakken.</p>
+<p>De hadde fått trening i det. Noe jeg ikke hadde. De hadde ett språk. Jeg var veldig langt fra komfortabel i situasjonen.</p>
+<p>&quot;Det ser da riktig pent og teknisk flott ut&quot; sa en av elevene &quot;men det sier meg ikke noe.&quot; -  Jeg hadde fotografert på en jakt jeg hade vært  med på. &quot;Men i helvede&quot; sa en annen - det må da ha vært noe blod - eller noe på liv eller død å ta bilder av&quot; - &quot;Du kunne da vel for fanden gått noe tettere på ?&quot;</p>
+<p>I bilen hjem over broen til Sverige bannet jeg over både Danebrogen, Tuborg og HC Andersen. Det var ikke deilig å være hverken det ene eller andre i Danmark. Men en ting bestemte jeg meg for. Selv om danskene var  idioter, så skulle jeg bli flinkere til å vise fram bildene mine.</p>
+<p>Det var da jeg meldte meg inn i TwPhCh - Jeg ville trene meg i å bli synlig med bildene mine - Trene på å gi og å få kritikk. En av de første jeg møtte i gruppen var Morten Prom, ...fra Køpenhamn:)) (Fantastisk dyktig og inspirerende fotograf.)</p>
+<p>TwPhCh ble ett fint og lærerikt forum å trene seg i. Å se, bli sett, kritisere og bli kritisert. Veldig verdifullt og helt nødvendig  om man ønsker å utvikle seg som fotograf. Nå har jeg gått på fotoskole i Sverige ett år. Fått sett andre elevers arbeider. Diskutert, analysert og tidvis blitt tygget på. Om ikke motet svikter skal jeg senere i vår  ta turen over broen og møte med Morten Bo for en ny samtale om bilder.</p>
+<p>Lover å skrive om hvordan det går.</p>
+<p>Den gode tonen vi har i TwPhCh er bra  og nyttig,  for meg har den vært veldig, veldig viktig. Takk, takk, takk alle sammen.  La oss fortsette å dele.</p>
+<p>Øyvind Sviland</p>
+BODY
+
+Blog.create({:title    => 'Om å dele bilder', :body => body,
+             :category => Category.find_by_title('Artikler'), :date => '2010-04-17'})
+
+body = <<BODY
+<p><strong>Min første bryllupsfoto – en lærerik erfaring.</strong></p>
+<p><em>@mytteristen, Monica Kristiansen, deler i denne posten sine erfaringer rundt det å fotografere i bryllup. <a href="http://mytteristen.blogspot.com/" target="_blank">Monica's blogg</a></em></p>
+<p><img style="float: left; padding-right: 10px; padding-bottom: 10px;" src="/images/blog/3.jpg" width="150" height="150" />I april fikk jeg i oppdrag å ta en bryllupsfotografering. Dvs, paret skulle ta et brudebilde til stueveggen med en profesjonell fotograf – og så skulle jeg ta paret med forlovere, barn, dyr (!), gjester, og lokalet.</p>
+<p>Jeg har lenge hatt lyst til å prøve meg på såkallt eventfoto, eller lifestyle om du vil. På grunn av skjelettskader etter strålebehandling, så er jeg nysgjerrig på om jeg klarer det rent fysisk, det går jo med noen timer - og selvfølgelig om det er noe jeg har lyst til å drive med. Jeg elsker å fotografere - men har ingen erfaring med å gjøre det på en slik måte.</p>
+<p>Jeg forberedte meg godt, ekstra kamera, ekstra batterier, minnekort, nyrensede objektiver, og jammen fikk ikke kameraet en finpuss også. Jeg hadde med meg min kjære D40, en D60 som backup, en 50mm, en 18-55mm, 55-200mm, og en 70-300mm. Dagen i forveien var jeg oppe ved festlokalet, og ryddet litt på location - en liten halvøy ute i en innsjø, med en fin bro på. Vakkert sted, om enn noe nakent og fargeløst i april. Jeg fikk testet litt lys, og noen ideer, og rigget opp en en fin benk. På forhånd hadde jeg studert en del poseringer og ideer hos andre fotografer - I love Flickr. :) Jeg hadde veldig lyst til å bevege meg litt vekk fra det tradisjonelle, men forsto fort at dette ikke var aktuelt for akkurat dette paret, som er godt voksne. Slikt må man nok regne med, samtalene før en bryllupsfoto er veldig viktige sånn sett. Jeg tenkte vel ikke akkurat å foreslå &laquo;trash the dress&raquo;, men jeg hadde lyst til å prøve en del utradisjonelle poseringer, bruke litt ballonger, såpebobler, og annet. Håper jeg får den muligheten en annen gang - det bobler over av ideer her.</p>
+<p>Klar som et egg dro jeg opp dit et par timer før brudeparet kom, med planer om å ta en del bilder fra bordsettinger, kaker, osv. Jeg tenkte også at jeg skulle ta gjestene etterhvert som de kom, og rigget til stativet utenfor inngangen.</p>
+<p>Lyset innendørs var en katastrofe. Og en meget insisterende dame dro for gardinene hver gang jeg åpnet dem. Jeg forsøkte å forklare at jeg trengte lyset, og at jeg skulle lukke dem pent etter meg. Ikke tale om. Noe stiv i maska, og med et anstrengt smil satte jeg i gang med 50mm, blender 1.4, hentet inn stativet, og brukte så lang lukkertid som mulig. Noe ble ok, men jeg var langt fra fornøyd.</p>
+<p>Så kom gjestene, og jeg lærte fort å ikke spørre - de stakk nemlig i alle retninger. Ingen av dem visste at jeg skulle være der, og flere synes tydelig dette var snodig. Jeg respekterer selvfølgelig at noen ikke vil bli tatt bilde av - men etterhvert følte jeg meg nesten som en paparazzi. Anyway, med brudens ord i bakhodet, (husk å knipse alle gjestene!), så gjorde jeg mitt beste for å være den usynlige fotografen.</p>
+<p>Da hovedpersonene kom var jeg skikkelig lettet, endelig noen som hadde lyst til å bli fotografert!</p>
+<p>Trodde jeg. Klokka var nå 16, det hadde blåst opp, og sola var så skarp som vårsola virkelig kan være. Og skarp sol i ansikter er ikke så lekkert. Paret var sultne, slitne, utålmodige, og iskalde etter å ha stått på en klippe ved sjøen med den første fotografen. Så jeg fikk vel egentlig beskjed om at dette måtte gå fort. Heldigvis var ungene store, så de var greie å få samlet. I et par minutter, ihvertfall. Bruden orket ikke å gå ned på location, så de ville ha tatt bildene utenfor festlokalet. En plass som ikke akkurat bød på pene omgivelser.</p>
+<p>Jeg gjorde mitt beste på de minuttene jeg hadde før alle styrtet innendørs. Til de elendige lysforholdene. Det å ta øyeblikksbilder av mennesker i dårlig lys er virkelig en utfordring. Man må helst ha kjapp lukker for å få med seg klemmer, hilsener, skåler, ansiktsuttrykk, osv. Jeg brukte mitt mest lyssterke objektiv, 50 mm f/1.4 - og stativ. 50 mm har ikke zoom, så det ble tungvint å drasse stativet rundt. Jeg tok noe håndholdt - og noe av det ble akseptabelt. Men ikke på langt nær slik jeg hadde planlagt.</p>
+<p>Jeg tok ikke betalt for denne jobben, mest fordi det var mitt første forsøk på bryllupsfoto. Så da toastmasteren annonserte middag, med et litt utålmodig blikk i min retning, så pakket jeg utstyret og dro hjem. På brikka hadde jeg ca 500 bilder, av dem ble det ca 70 akseptable igjen etter redigering. Brudeparet var kjempefornøyde med resultatet - så jeg antar at de fikk det ville ha. Som sagt er jeg ikke fornøyd selv - men jeg lærte i hvertfall en del. Om det blir noen neste gang, så bør det planlegges bedre for slike eventualiteter. Muligens hadde det vært bedre å tatt mine foto ute etter middagen, eller kanskje skulle vi rigget opp noe bedre innendørs. Lys er ihvertfall det jeg skal undersøke først og fremst neste gang. Gjestene bør også vite at det skal være en fotograf der. Kanskje er det også en ide å inkludere forloverne i planleggingen så man kan få litt hjelp der.</p>
+<p>Alt i alt var det en lærerik erfaring - jeg har ikke mistet motet, men jeg må innrømme at helgens konfirmasjonsfoto fikk opp selvtilliten igjen - der gikk alt som planlagt, det var virkelig morsomt.</p>
+<p>Jeg anbefaler alle som får muligheten, til å prøve seg på bryllupsfoto - og håper at mine erfaringer kan være til litt nytte i den anledning. Lykke til!</p>
+<p><img src="/images/blog/4.jpg" width="500" /></p>
+BODY
+
+Blog.create({:title    => 'Bryllupsfoto med @mytteristen', :body => body,
+             :category => Category.find_by_title('Artikler'), :date => '2010-05-04'})
+
+body = <<BODY
+<p><strong>1 år, mye kvalitet!</strong></p>
+<p>Etter at den første Twitter Photo Challenge ble annonsert og startet <em>08.05.2009</em>, har vi nå gjennomført over 52 ukesoppdrag. Det er kommet inn ca <strong>2500 bidrag</strong> i Flickr poolen vår, og vi teller ca <strong>450 medlemmer</strong>.</p>
+<p>Dette er jo i seg selv helt fantastisk! At noe som startet som en vanlig foto diskusjon på Twitter, skulle ende opp med noe slikt som dette, er langt over hva vi kunne forvente. Oppdragene og tema har variert stort, og det er fascinerende  å følge med på hvordan man tolker oppdragene forskjellig. Heldigvis er det alikevel en ting vi kan stole på at er konsistent fra uke til uke; <strong><em>Kvaliteten på bidragene</em></strong>.</p>
+<p>Nå skal vi kanskje ikke bruke Flickr Explore som er definitivt kvalitetstempel på bidragene, men det er <em>mange</em> av bildene &quot;våre&quot; som har havnet på denne listen!</p>
+<p>Dersom en tar seg tid til å sette seg ned å se innholdet i poolen så langt, ser man at nivået på bidragene vi får inn er helt fantastisk. Vi har jammen klart å samle en talentfull gjeng med  fotografer, samtidig som vi har klart å beholde en vennlig tone mot nykommere. Det siste her er viktig! La oss fortsette med dette også det neste året!</p>
+<p>Vi i admin gjengen kan gjerne klappe oss selv på skulderen og konkludere med at vi er flinke, men sannheten er at dette ikke er på grunn av oss.</p>
+<p><strong>Uten alle de engasjerte medlemmene våre, deres kreative bidrag og tonen dere i mellom hadde dette aldri blitt en suksess.</strong></p>
+<p><strong>På vegne av admingruppen vil jeg takke hver og en av dere som har bidratt med foto, kunnskap, engasjement og humor det første året.</strong></p>
+<p><strong>1 år, 1 vinner</strong></p>
+<p>Siden det nå har gått et år, velger vi nå å forsøke å kåre en årsvinner. Vi har samlet alle vinnerbidragene og ber dere nå om å velge deres favoritt! 52 knallgode bidrag, og denne gangen får dere bare <em>1 stemme</em> så vurder nøye hvilket bilde du stemmer på. En stemme, en vinner og som vanlig er det ikke lov til å stemme på seg selv ;-)</p>
+<p>Stemmeapplikasjonen er åpen fra <em>11.mai kl 11:00</em> til <em>23.mai kl. 21:00</em>. Vi har desverre ingen stor premie til vinneren denne gangen heller, men vi kan selvfølgelig tilby et helt år med skryterettigheter!</p>
+<p>Årsavstemmingen fungerer på omtrent samme måte som den vanlige stemmeapplikasjonen vår, men du må godkjenne at denne nye applikasjonen får tilgang til Flickr kontoren din på samme måte som den vanlige applikasjonen. Deretter logger du inn som vanlig og stemmer.</p>
+<p>Stemmeapplikasjonen finner du på <a href="http://52.twphch.com/">52.twphch.com</a>!</p>
+BODY
+
+Blog.create({:title    => '52 uker, 1 vinner!', :body => body,
+             :category => Category.find_by_title('Info'), :date => '2010-05-10'})
+
+body = <<BODY
+<strong>Gratulerer Ole-Martin Mørk.</strong>
+<p><em>Ett stort takk til Ole Martin, ikke bare for ett fantastisk bilde men for denne teksten der han forteller litt om seg selv og hvordan han har jobbet. //</em></p>
+<p><strong>Bakgrunnen</strong> for bildet var oppgaven Halloween. Det første som slo meg var dusj-scenen fra Psycho. Det er noe i den uvitende kombinert med den snikende morderen som er veldig skummelt. Planen var egentlig å ta ett bilde i dusjen og ett i stua og se hva som ble best, men når sofa-bildet ble så bra så følte jeg at jeg var i boks :-)</p>
+<p><strong>Teknisk</strong>: Jeg plasserte kameraet på et stativ med manuelt program og manuel fokus. Etter en del forsøk så klarte jeg å få kniven i fokus, og da var det bare å løpe bort i sofaen og slenge seg nedpå med en avis. Bildene ble merget i photoshop ved hjelp av layer mask. Iom at kniven var plassert så langt til venstre så var dette veldig enkelt. Det ferdige bildet <a href="/images/blog/5.jpg" target="_blank">så sånn ut</a>.</p>
+<p>Deretter var det bare å hive seg inn i lightroom og prøve å få fram den stemningen jeg ville ha. Jeg brukte en preset som heter 300 v1. Målet med preset-en er å få fram samme type bilde som brukes på posteren til filmen 300. Selv om preset-en gir mye her, så vil jeg si at det aller viktigste i bildet er utsnittet. Jeg gikk mye fram og tilbake, men når jeg kom til en kvadratisk crop så skjønte jeg at dette kunne bli bra :-)</p>
+<p><strong>Bio</strong>:  Mitt navn er Ole-Martin Mørk, 32 år, opprinnelig fra Skiptvet i Østfold. Bor i Oslo med samboer.  Etter å ha vært en tur i India i februar 2008 og sett fantastiske motiver bli ødelagt av et kompaktkamera så bestemte jeg meg for å for å kjøpe meg et speilreflekskamera. Da Japan Photo kom med et kjempetilbud på Canons utgående modell 30D så slo jeg til, og jeg har ikke sett meg tilbake siden. Dette kameraet ble ødelagt i sommer, men jeg hadde for første gang kjøpt meg superforsikring, så nå har jeg et 40D.</p>
+<p>Av annet utstyr så har jeg etterhvert kjøpt Canon EF 50mm f/1.8 II, Canon EF 70-200mm f/4, Tamron SP AF17-50mm f/2.8, Canon 430 EX blitz og et Velbon Sherpa 600R stativ. Det er mye jeg har lyst på, men øverst på ønskelisten står trådløs styring av blitz, paraplyer, makrolinse og Canon EF 70-200mm f/2.8. Jeg liker best å ta bilder av motorsport, og har i den forbindelse etablert et enkeltpersonforetak og nettsiden <a href="http://fullfartfoto.no" target="_blank">http://fullfartfoto.no</a> hvor jeg selger bilder til utøvere og media. Har foreløpig ikke tatt helt av, men jeg føler jeg har talent for dette og blir bedre for hver gang. Til vanlig så jobber jeg som programmerer i <a href="http://openadex.com" target="_blank">Open AdExchange</a>
+BODY
+
+Blog.create({:title    => 'Årets bildet er kåret!', :body => body, :fid => '4069606518',
+             :category => Category.find_by_title('Vinnere'), :date => '2010-05-25'})
+
+=begin
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+body = <<BODY
+BODY
+
+Blog.create({:title    => '', :body => body,
+             :category => Category.find_by_title(''), :date => ''})
+
+=end

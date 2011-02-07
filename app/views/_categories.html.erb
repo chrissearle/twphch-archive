@@ -4,7 +4,7 @@
   <div class="sbilinks">
     <ul>
       <% @categories.each do |category| %>
-          <li><%= link_to category.title, blogs_path(:category => category.id) %></li>
+          <li><%= link_to category.title, blogs_path(:category => category.id), :class => 'ajaxable' %></li>
       <% end %>
       <li><%= link_to 'Alle', blogs_path %></li>
     </ul>

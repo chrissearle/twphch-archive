@@ -306,18 +306,18 @@ ol li {
 
 /* Local */
 
-table.challenge_list {
+table.object_list {
     width: 500px;
     border: 1px solid;
     border-collapse: collapse;
 }
 
-table.challenge_list th {
+table.object_list th {
     border-bottom: 1px solid;
     padding: 3px;
 }
 
-table.challenge_list td {
+table.object_list td {
     padding: 3px;
 }
 

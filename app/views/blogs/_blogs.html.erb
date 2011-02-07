@@ -1,1 +1,12 @@
-<%= render :partial => 'blog', :collection => @blogs %>
+<table class="object_list">
+  <thead>
+  <tr>
+    <th>Tittel</th>
+    <th>Kategori</th>
+    <th>Dato</th>
+  </tr>
+  </thead>
+  <tbody>
+  <%= render :partial => 'blogrow', :collection => @blogs %>
+  </tbody>
+</table>

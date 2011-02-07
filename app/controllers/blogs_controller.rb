@@ -2,10 +2,10 @@ class BlogsController < ApplicationController
   before_filter :load_categories
 
   def index
-    @blogs = Blog.order(:date)
-
-    if (params[:category_id])
-      @blogs = @blogs.find_all{|blog| blog.category.id == params[:category_id]}
+    if (params[:category])
+      @blogs = Category.find(params[:category]).blogs.ordered
+    else
+      @blogs = Blog.ordered
     end
   end
 
