@@ -1,6 +1,6 @@
 # coding: UTF-8
 
-[Challenge, Image].each(&:delete_all)
+[Image, Challenge, Comment, Blog, Category].each(&:delete_all)
 
 # select concat('{ :tag => "',  tag,  '", :title => "', description, '", :date => "', DATE(start_date), '"},') from challenge
 Challenge.create([{:tag => "TwPhCh001", :title => "Rødt", :date => "2009-05-08"},
@@ -1826,3 +1826,8 @@ img             = Image.find_by_fid('3910004818')
 img.first_rank  = 3
 img.first_votes = 3
 img.save
+
+Category.create([{:title => 'Vinnere'},
+                 {:title => 'Artikler'},
+                 {:title => 'Info'},
+                 {:title => 'Annet'}])

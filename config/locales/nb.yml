@@ -12,6 +12,9 @@ nb:
     rounds:
       title: "Ukentlige runder"
       link: "Ukentlige runder"
+    blog:
+      title: "Blogg"
+      link: "Blogg"
   side:
     photographers:
       link: "Fotografferne"

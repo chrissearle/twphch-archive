@@ -26,29 +26,35 @@
       <li><%= link_to I18n.t('main.rounds.link'), rounds_path, :id => 'archive_link', :class => "ajaxable #{class_for_page_name(controller, 'archive')}" %></li>
       <li><%= link_to I18n.t('main.first_year.link'), first_year_index_path, :id => '52_link', :class => "ajaxable #{class_for_page_name(controller, '52')}" %></li>
       <li><%= link_to I18n.t('main.best_of.link'), best_of_index_path, :id => '92_link', :class => "ajaxable #{class_for_page_name(controller, '92')}" %></li>
+      <li><%= link_to I18n.t('main.blog.link'), blogs_path, :id => 'blog_link', :class => "ajaxable #{class_for_page_name(controller, 'blog')}" %></li>
       <li><%= link_to I18n.t('main.about.link'), about_index_path, :id => 'about_link', :class => "ajaxable #{class_for_page_name(controller, 'about')}" %></li>
     </ul>
   </div>
   <div id="content">
     <div id="column1">
-      <div id="challenge_div">
+      <div id="challenge_div" class="info_div">
         <% if (@challenge) %>
             <%= render :partial => '/challenge' %>
         <% end %>
       </div>
-      <div id="tags_div">
+      <div id="tags_div" class="info_div">
         <% if (@tags) %>
             <%= render :partial => '/tags' %>
         <% end %>
       </div>
-      <div id="photographer_div">
+      <div id="photographer_div" class="info_div">
         <% if (@photographer) %>
             <%= render :partial => '/photographer' %>
         <% end %>
       </div>
-      <div id="statistics_div">
+      <div id="statistics_div" class="info_div">
         <% if (@data) %>
             <%= render :partial => '/stats' %>
+        <% end %>
+      </div>
+      <div id="categories_div" class="info_div">
+        <% if (@categories) %>
+            <%= render :partial => '/categories' %>
         <% end %>
       </div>
     </div>

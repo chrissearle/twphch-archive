@@ -1,0 +1,6 @@
+$('#content_title').html("<%= I18n.t('main.blog.title') %>");
+$('#page_content').html('<%= escape_javascript(render("blogs")) %>');
+$('#menu ul li a').removeClass('selected');
+$('#blog_link').addClass('selected');
+$('#categories_div').html('<%= escape_javascript(render("/categories")) %>');
+document.title = "<%= I18n.t('main.blog.title') %>";
