@@ -1,4 +1,4 @@
 $('#content_title').html("<%= "##{@challenge.tag} - #{@challenge.title}" %>");
-$('#page_content').html('<%= escape_javascript(render("images")) %>');
+$('#page_content').html('<%= escape_javascript(render(:partial => "image", :collection => @challenge.ordered_images)) %>');
 $('#challenge_div').html('<%= escape_javascript(render("/challenge")) %>');
 document.title = "<%= "##{@challenge.tag} - #{@challenge.title}" %>";
