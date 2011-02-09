@@ -1,5 +1,5 @@
 $('#content_title').html("<%= I18n.t('main.rounds.title') %>");
-$('#page_content').html('<%= escape_javascript(render("challenge_list")) %>');
+$('#page_content').html('<%= escape_javascript(render(:partial => "challenge_list", :locals => { :challenges => @challenges })) %>');
 $('#menu ul li a').removeClass('selected');
 $('#archive_link').addClass('selected');
 document.title = "<%= I18n.t('main.first_year.title') %>";
