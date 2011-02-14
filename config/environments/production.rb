@@ -49,5 +49,5 @@ TwphchArchive::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
-  config.cache_store = :dalli_store
+  config.cache_store = :dalli_store, { :expires_in => 60 * 60 * 24 * 7 }
 end
