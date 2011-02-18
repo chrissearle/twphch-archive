@@ -1805,25 +1805,31 @@ Image.create([{:fid => "3494281144", :owner_fid => "65685797@N00", :votes => "5"
               {:fid => "5413814698", :owner_fid => "50476629@N02", :votes => "6", :rank => "4", :challenge => Challenge.find_by_tag("TwPhCh091")},
               {:fid => "5414071073", :owner_fid => "39255519@N05", :votes => "0", :rank => "8", :challenge => Challenge.find_by_tag("TwPhCh091")},
               {:fid => "5414346532", :owner_fid => "28745942@N05", :votes => "4", :rank => "6", :challenge => Challenge.find_by_tag("TwPhCh091")},
-              {:fid => "5415289515", :owner_fid => "41046781@N08", :votes => "5", :rank => "5", :challenge => Challenge.find_by_tag("TwPhCh091")}])
+              {:fid => "5415289515", :owner_fid => "41046781@N08", :votes => "5", :rank => "5", :challenge => Challenge.find_by_tag("TwPhCh091")},
+              {:fid => "5428858268", :owner_fid => "28745942@N05", :votes => "4", :rank => "2", :challenge => Challenge.find_by_tag("TwPhCh092")},
+              {:fid => "5434078027", :owner_fid => "40319273@N07", :votes => "2", :rank => "3", :challenge => Challenge.find_by_tag("TwPhCh092")},
+              {:fid => "5434110069", :owner_fid => "41277157@N04", :votes => "1", :rank => "4", :challenge => Challenge.find_by_tag("TwPhCh092")},
+              {:fid => "5436476886", :owner_fid => "35559038@N02", :votes => "6", :rank => "1", :challenge => Challenge.find_by_tag("TwPhCh092")},
+              {:fid => "5436596676", :owner_fid => "32558102@N06", :votes => "6", :rank => "1", :challenge => Challenge.find_by_tag("TwPhCh092")},
+              {:fid => "5436628990", :owner_fid => "30237758@N04", :votes => "6", :rank => "1", :challenge => Challenge.find_by_tag("TwPhCh092")}])
 
-img             = Image.find_by_fid('4069606518')
-img.first_rank  = 1
+img = Image.find_by_fid('4069606518')
+img.first_rank = 1
 img.first_votes = 5
 img.save
 
-img             = Image.find_by_fid('4408786160')
-img.first_rank  = 2
+img = Image.find_by_fid('4408786160')
+img.first_rank = 2
 img.first_votes = 4
 img.save
 
-img             = Image.find_by_fid('3863862273')
-img.first_rank  = 3
+img = Image.find_by_fid('3863862273')
+img.first_rank = 3
 img.first_votes = 3
 img.save
 
-img             = Image.find_by_fid('3910004818')
-img.first_rank  = 3
+img = Image.find_by_fid('3910004818')
+img.first_rank = 3
 img.first_votes = 3
 img.save
 
@@ -1842,7 +1848,7 @@ body = <<BODY
 <p>Lykke til med jobben Öyvind !</p>
 BODY
 
-Blog.create({:title    => 'Ny Blogg-sjef', :body => body,
+Blog.create({:title => 'Ny Blogg-sjef', :body => body,
              :category => Category.find_by_title('Info'), :date => '2010-04-10'})
 
 body = <<BODY
@@ -1861,7 +1867,7 @@ body = <<BODY
 <p>Øyvind Sviland</p>
 BODY
 
-Blog.create({:title    => 'Om å dele bilder', :body => body,
+Blog.create({:title => 'Om å dele bilder', :body => body,
              :category => Category.find_by_title('Artikler'), :date => '2010-04-17'})
 
 body = <<BODY
@@ -1882,7 +1888,7 @@ body = <<BODY
 <p><img src="/images/blog/4.jpg" width="500" /></p>
 BODY
 
-Blog.create({:title    => 'Bryllupsfoto med @mytteristen', :body => body,
+Blog.create({:title => 'Bryllupsfoto med @mytteristen', :body => body,
              :category => Category.find_by_title('Artikler'), :date => '2010-05-04'})
 
 body = <<BODY
@@ -1901,7 +1907,7 @@ body = <<BODY
 <p>Stemmeapplikasjonen finner du på <a href="http://52.twphch.com/">52.twphch.com</a>!</p>
 BODY
 
-Blog.create({:title    => '52 uker, 1 vinner!', :body => body,
+Blog.create({:title => '52 uker, 1 vinner!', :body => body,
              :category => Category.find_by_title('Info'), :date => '2010-05-10'})
 
 body = <<BODY
@@ -1914,7 +1920,7 @@ body = <<BODY
 <p>Av annet utstyr så har jeg etterhvert kjøpt Canon EF 50mm f/1.8 II, Canon EF 70-200mm f/4, Tamron SP AF17-50mm f/2.8, Canon 430 EX blitz og et Velbon Sherpa 600R stativ. Det er mye jeg har lyst på, men øverst på ønskelisten står trådløs styring av blitz, paraplyer, makrolinse og Canon EF 70-200mm f/2.8. Jeg liker best å ta bilder av motorsport, og har i den forbindelse etablert et enkeltpersonforetak og nettsiden <a href="http://fullfartfoto.no" target="_blank">http://fullfartfoto.no</a> hvor jeg selger bilder til utøvere og media. Har foreløpig ikke tatt helt av, men jeg føler jeg har talent for dette og blir bedre for hver gang. Til vanlig så jobber jeg som programmerer i <a href="http://openadex.com" target="_blank">Open AdExchange</a>
 BODY
 
-Blog.create({:title    => 'Årets bildet er kåret!', :body => body, :fid => '4069606518',
+Blog.create({:title => 'Årets bildet er kåret!', :body => body, :fid => '4069606518',
              :category => Category.find_by_title('Vinnere'), :date => '2010-05-25'})
 
 =begin
