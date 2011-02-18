@@ -7,6 +7,7 @@ $(function () {
         href = href.replace(/[^\/]*css/, $(this).data('colour') + ".css");
         $('#colour_css_tag').attr('href', href);
 
+        // Saves in session
         $.get('/colour?colour=' + $(this).data('colour'));
         
         e.preventDefault();
