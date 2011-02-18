@@ -2,6 +2,8 @@
 
 TwphchArchive::Application.routes.draw do
 
+  match "/colour" => "colour#index", :as => :colour
+
   resources :about
   resources :best_of
   resources :rounds

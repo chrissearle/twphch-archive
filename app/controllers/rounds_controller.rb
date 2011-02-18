@@ -6,7 +6,7 @@ class RoundsController < ApplicationController
   end
 
   def show
-    @challenge = Challenge.find(params[:id]) 
+    @challenge = Challenge.find(params[:id])
   end
 
   def page_name

@@ -6,27 +6,9 @@ $(function () {
         var href = $('#colour_css_tag').attr('href');
         href = href.replace(/[^\/]*css/, $(this).data('colour') + ".css");
         $('#colour_css_tag').attr('href', href);
+
+        $.get('/colour?colour=' + $(this).data('colour'));
+        
         e.preventDefault();
     });
-
-    if (!!window.history && !!window.history.pushState) {
-        $('.ajaxable').live('click', function (e) {
-            history.pushState(null, "", this.href);
-            $('div.info_div').html('');
-            $.getScript(this.href);
-            e.preventDefault();
-        });
-
-        $('#loading').hide().ajaxStart(
-                                      function() {
-                                          $(this).show();
-                                      }).ajaxStop(function() {
-            $(this).hide();
-        });
-
-        $(window).bind("popstate", function () {
-            $.getScript(location.href);
-        });
-    }
 });
-

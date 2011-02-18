@@ -1,6 +1,0 @@
-$('#content_title').html("<%= @image['title']%>");
-$('#page_content').html('<%= escape_javascript(render(:partial => 'image', :object => @image)) %>');
-$('#statistics_div').html('<%= escape_javascript(render("/stats")) %>');
-$('#tags_div').html('<%= escape_javascript(render("/tags")) %>');
-$('#photographer_div').html('<%= escape_javascript(render("/photographer")) %>');
-document.title = "<%= @image['title'] %>";

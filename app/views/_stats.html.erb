@@ -6,7 +6,7 @@
     <ul>
       <li><%= @data.rank %>. plass med <%= @data.votes %> stemmer.</li>
       <li>
-        <%= link_to "##{@data.challenge.tag} - #{@data.challenge.title}", round_path(@data.challenge), :class => 'ajaxable' %>
+        <%= link_to "##{@data.challenge.tag} - #{@data.challenge.title}", round_path(@data.challenge) %>
       </li>
     </ul>
   </div>
@@ -16,7 +16,7 @@
         <ul>
           <li><%= @data.first_rank %>. plass med <%= @data.first_votes %> stemmer.</li>
           <li>
-            <%= link_to "Det første året", first_year_index_path, :class => 'ajaxable' %>
+            <%= link_to "Det første året", first_year_index_path %>
           </li>
         </ul>
       </div>
